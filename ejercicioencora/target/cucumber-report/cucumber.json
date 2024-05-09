@@ -1,0 +1,111 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-15T21:44:08.117Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2858297600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verificar la busqueda de productos 2",
+        "description": "",
+        "id": "como-usuario-quiero-buscar-productos-en-google;verificar-la-busqueda-de-productos-2;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 123529800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2208904600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "se abre la pagina web",
+            "match": {
+              "location": "definitions.BusquedaDefinitions.seAbreLaPaginaWeb()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 80002900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "el usuario ingresa el producto \"adidas\" a buscar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"adidas\"",
+                  "offset": 31
+                }
+              ],
+              "location": "definitions.BusquedaDefinitions.elUsuarioIngresaElProductoABuscar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164655600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "el usuario preciona enter",
+            "match": {
+              "location": "definitions.BusquedaDefinitions.elUsuarioPrecionaEnter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2499427300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "el texto buscado \"adidas\" se encuentra contenido en la lista de resultados",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"adidas\"",
+                  "offset": 17
+                }
+              ],
+              "location": "definitions.BusquedaDefinitions.elTextoBuscadoSeEncuentraContenidoEnLaListaDeResultados(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cris2"
+          }
+        ]
+      }
+    ],
+    "name": "Como usuario quiero buscar productos en google",
+    "description": "",
+    "id": "como-usuario-quiero-buscar-productos-en-google",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/busqueda.feature",
+    "tags": []
+  }
+]
